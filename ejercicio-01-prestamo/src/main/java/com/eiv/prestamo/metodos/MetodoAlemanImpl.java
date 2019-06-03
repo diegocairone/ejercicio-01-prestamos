@@ -9,6 +9,6 @@ public class MetodoAlemanImpl implements Metodo {
     @Override
     public BigDecimal calculoValorCuota(PrestamoDatos prestamoDatos) {
         // TODO Auto-generated method stub
-        return BigDecimal.TEN;
+        return BigDecimal.TEN.add(BigDecimal.TEN);
     }
 }
