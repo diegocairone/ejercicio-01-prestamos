@@ -11,7 +11,6 @@ public class MetodoAlemanImpl implements Metodo {
         // TODO Auto-generated method stub
         // Hacemos un cambio
         // Un segundo comentario
-        // Tercer cambio
         return BigDecimal.TEN;
     }
 }
