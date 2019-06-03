@@ -10,6 +10,7 @@ public class MetodoAlemanImpl implements Metodo {
     public BigDecimal calculoValorCuota(PrestamoDatos prestamoDatos) {
         // TODO Auto-generated method stub
         // Hacemos un cambio
+        // Un segundo comentario
         return BigDecimal.ZERO;
     }
 
