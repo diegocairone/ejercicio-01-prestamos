@@ -11,14 +11,14 @@ public class MetodoFrancesImpl implements Metodo {
     @Override
     public BigDecimal calculoValorCuota(PrestamoDatos prestamoDatos) {
 
-        BigDecimal razon = prestamoDatos.getTna()
+        BigDecimal razon2 = prestamoDatos.getTna()
                 .multiply(App.DIAS)
                 .divide(App.CIEN.multiply(App.DIAS_ANIO), 6, RoundingMode.HALF_UP);
         
-        BigDecimal factor = razon.add(BigDecimal.ONE).pow(prestamoDatos.getCuotas());
+        BigDecimal factor = razon2.add(BigDecimal.ONE).pow(prestamoDatos.getCuotas());
         
         BigDecimal valorCuota = prestamoDatos.getCapital()
-                .multiply(razon)
+                .multiply(razon2)
                 .multiply(factor)
                 .divide(factor.subtract(BigDecimal.ONE), 2, RoundingMode.HALF_UP);
         
